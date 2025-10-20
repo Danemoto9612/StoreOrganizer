@@ -608,7 +608,7 @@ public class Operations {
 
                             LocalDate d1 = LocalDate.parse(boxesA[j].expirationDate, dateFormat);
                             LocalDate d2 = LocalDate.parse(boxesA[j + 1].expirationDate, dateFormat);
-                            if (d1.isAfter(d2)) {
+                            if (d2.isAfter(d1)) {
 
                                 ShelfA temp = boxesA[j];
                                 boxesA[j] = boxesA[j + 1];
